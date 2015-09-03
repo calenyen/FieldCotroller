@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<TextView
+	    android:id="@+id/textRcv"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="30dp"
+	    android:text="@string/TextView"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/textTemp"
+	    android:layout_width="200dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/textView2"
+	    android:layout_marginLeft="44dp"
+	    android:layout_toRightOf="@+id/textView2"
+	    android:inputType="numberDecimal"
+	    android:text="0.00"
+	    android:textAlignment="textEnd"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/textHumdy"
+	    android:layout_width="200dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/textView4"
+	    android:layout_alignBottom="@+id/textView4"
+	    android:layout_alignLeft="@+id/textTemp"
+	    android:text="0.00"
+	    android:textAlignment="textEnd"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/textView6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/textTemp"
+	    android:layout_alignBottom="@+id/textTemp"
+	    android:layout_toRightOf="@+id/textTemp"
+	    android:inputType="text"
+	    android:text="℃"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/textView3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/textHumdy"
+	    android:layout_alignBottom="@+id/textHumdy"
+	    android:layout_alignLeft="@+id/textView6"
+	    android:inputType="text"
+	    android:text="%"
+	    android:textSize="30sp" />
+<!-- 
+	<ToggleButton
+	    android:id="@+id/toggleButtonLED"
+	    android:layout_width="200dp"
+	    android:layout_height="100dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/textRcv"
+	    android:layout_marginRight="30dp"
+	    android:layout_marginTop="38dp"
+	    android:onClick="blinkLED"
+	    android:textOff="Turn ON"
+	    android:textOn="Turn OFF"
+	    android:textSize="30sp" />
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/toggleButtonLED"
+	    android:layout_below="@+id/textView1"
+	    android:layout_marginTop="19dp"
+	    android:text="Http Post" 
+        android:onClick="sendHttpPost"	    
+	    android:textSize="30sp" />
+ -->
+
+	<TextView
+	    android:id="@+id/TextCndct"
+	    android:layout_width="200dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/TextView01"
+	    android:layout_alignBottom="@+id/TextView01"
+	    android:layout_alignLeft="@+id/textTemp"
+	    android:inputType="numberDecimal"
+	    android:text="0.00"
+	    android:textAlignment="textEnd"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/TextView02"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/TextCndct"
+	    android:layout_alignBottom="@+id/TextCndct"
+	    android:layout_alignLeft="@+id/textView6"
+	    android:inputType="text"
+	    android:text="ms"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/TextView04"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/TextView02"
+	    android:layout_below="@+id/TextView02"
+	    android:inputType="text"
+	    android:text="℃"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/TextView01"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/TextView03"
+	    android:layout_marginBottom="45dp"
+	    android:layout_toLeftOf="@+id/textTemp"
+	    android:inputType="text"
+	    android:text="導電度值:"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/TextSTemp"
+	    android:layout_width="200dp"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/textView2"
+	    android:layout_toLeftOf="@+id/TextView04"
+	    android:inputType="numberDecimal"
+	    android:text="0.00"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/textList1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:text="系統訊息"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/textView4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textView2"
+	    android:layout_marginTop="18dp"
+	    android:layout_toLeftOf="@+id/textTemp"
+	    android:inputType="text"
+	    android:text="系統濕度:"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/TextView03"
+	    android:layout_below="@+id/TextView03"
+	    android:layout_marginTop="65dp"
+	    android:inputType="text"
+	    android:text="系統溫度:"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/TextView03"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/textRcv"
+	    android:layout_marginLeft="60dp"
+	    android:layout_marginTop="75dp"
+	    android:inputType="text"
+	    android:text="樣品溫度:"
+	    android:textSize="30sp" />
+
+	<TextView
+	    android:id="@+id/TextView05"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/textHumdy"
+	    android:layout_alignBottom="@+id/textHumdy"
+	    android:layout_toLeftOf="@+id/textTemp"
+	    android:inputType="text"
+	    android:text="系統濕度:"
+	    android:textSize="30sp" />
+
+</RelativeLayout>
+

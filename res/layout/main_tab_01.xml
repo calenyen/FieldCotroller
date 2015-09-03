@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textRcv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/TextView"
+        android:textSize="30sp" />
+
+    <!--
+	<ToggleButton
+	    android:id="@+id/toggleButtonLED"
+	    android:layout_width="200dp"
+	    android:layout_height="100dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/textRcv"
+	    android:layout_marginRight="30dp"
+	    android:layout_marginTop="38dp"
+	    android:onClick="blinkLED"
+	    android:textOff="Turn ON"
+	    android:textOn="Turn OFF"
+	    android:textSize="30sp" />-->
+
+    <!--
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/toggleButtonLED"
+	    android:layout_below="@+id/textView1"
+	    android:layout_marginTop="19dp"
+	    android:text="Http Post" 
+        android:onClick="sendHttpPost"
+        android:textSize="30sp"/>
+ -->
+
+    <TextView
+        android:id="@+id/TextCndct"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/TextView01"
+        android:inputType="numberDecimal"
+        android:text="0.00"
+        android:textAlignment="textEnd"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextCndct"
+        android:layout_alignLeft="@+id/textView6"
+        android:inputType="text"
+        android:text="mS/cm"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textList1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="系統訊息"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textRcv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:text="樣品溫度:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextSTemp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView03"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/TextView03"
+        android:inputType="numberDecimal"
+        android:text="0.00"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewCndut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="30dp"
+        android:text="@string/CalCndct"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCndut"
+        android:layout_alignLeft="@+id/TextView04"
+        android:inputType="text"
+        android:text="mS/cm"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textConductivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCndut"
+        android:layout_below="@+id/textViewCndut"
+        android:layout_marginTop="15dp"
+        android:text="@string/calCl"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView03"
+        android:layout_below="@+id/TextView03"
+        android:layout_marginBottom="15dp"
+        android:text="導電度值:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextSTemp"
+        android:layout_alignLeft="@+id/TextView02"
+        android:inputType="text"
+        android:text="℃"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textCalCl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textConductivity"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textConductivity"
+        android:text="0.00"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/lb_systemtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textConductivity"
+        android:layout_below="@+id/textConductivity"
+        android:layout_marginTop="30dp"
+        android:text="系統溫度"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/lb_systemHumity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lb_systemtemp"
+        android:layout_below="@+id/lb_systemtemp"
+        android:layout_marginTop="15dp"
+        android:text="系統濕度"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textTemp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lb_systemtemp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/lb_systemtemp"
+        android:inputType="numberDecimal"
+        android:text="0.00"
+        android:textAlignment="textEnd"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTemp"
+        android:layout_toRightOf="@+id/textTemp"
+        android:inputType="text"
+        android:text="℃"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textHumdy"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lb_systemHumity"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/lb_systemHumity"
+        android:text="0.00"
+        android:textAlignment="textEnd"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lb_systemHumity"
+        android:layout_alignParentBottom="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textCalCndct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCndut"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textConductivity"
+        android:text="0.00"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textHumdy"
+        android:layout_toRightOf="@+id/textHumdy"
+        android:inputType="text"
+        android:text="%"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textCalCl"
+        android:layout_alignLeft="@+id/TextView04"
+        android:layout_toRightOf="@+id/textCalCl"
+        android:inputType="text"
+        android:text="ppm"
+        android:textSize="30sp" />
+
+</RelativeLayout>

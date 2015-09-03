@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Field Controller (HCT001 v0.04)</string>
+    <string name="URL">http://sensing-lives.appspot.com/sensorRD</string>
+    <string name="TextView">Message</string>
+    <string name="systemhumidity">系統溫度</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="CalCndct">導電度(修):</string>
+    <string name="calCl">"氯離子(測): "</string>
+
+</resources>

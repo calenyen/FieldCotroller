@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_main_weixin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+   
+    <!-- 
+    <include layout="@layout/title_bar"/>
+     -->
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:onClick="showPLCMMon"
+        android:text="List Data" />
+     
+
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="39dp"
+    android:layout_toRightOf="@+id/button1"
+    android:onClick="saveData"
+    android:text="Save Data" />
+
+<ListView
+    android:id="@+id/listView1"
+    android:layout_width="1000dp"
+    android:layout_height="300dp"
+    android:layout_alignParentBottom="false"
+    android:layout_below="@id/button1"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="50dp" >
+    
+</ListView>
+   
+</RelativeLayout>
